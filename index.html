@@ -3,258 +3,457 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Zélie Leydert</title>
-    <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=JetBrains+Mono:wght@300;400;500&display=swap"
-          rel="stylesheet">
-    <link rel="stylesheet" href="styles.css">
+    <title>Zélie Leydert | Software & Game Developer | Computer Science Engineer</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=JetBrains+Mono:ital,wght@0,300;0,400;0,500;0,700;1,400&display=swap" rel="stylesheet">
+
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+	<link rel="stylesheet" href="styles.css">
 </head>
 <body>
+
 <div class="bg-gradient"></div>
 
+<!-- Top Navigation -->
 <nav>
     <div class="container">
-        <div class="logo">&lt;/ZélieLeydert&gt;</div>
-        <ul class="nav-links">
-            <li><a href="#home">Home</a></li>
+        <a href="#home" class="logo">&lt;/ZélieLeydert&gt;</a>
+        <button class="mobile-menu-btn" id="mobileMenuBtn">
+            <i class="fa-solid fa-bars"></i>
+        </button>
+        <ul class="nav-links" id="navLinks">
+            <li><a href="#about">About</a></li>
+            <li><a href="#experience">Experience</a></li>
             <li><a href="#skills">Skills</a></li>
             <li><a href="#projects">Projects</a></li>
+            <li><a href="#education">Education</a></li>
             <li><a href="#contact">Contact</a></li>
         </ul>
     </div>
 </nav>
 
+<!-- Hero Section -->
 <section id="home" class="hero">
     <div class="container">
-        <div class="hero-content">
-            <div class="hero-tag">💻 Available for opportunities</div>
-            <h1>Building <span class="highlight">digital experiences</span> through code</h1>
-            <p>Innovative Software and Game Developer with hands-on experience in full-cycle development, software
-                modernisation, and immersive game design. Passionate about
-                creating efficient, scalable solutions and always eager to learn new technologies.
-            </p>
-            <div class="cta-buttons">
-                <a href="#projects" class="btn btn-primary">View My Work</a>
-                <a href="#contact" class="btn btn-secondary">Get in Touch</a>
-                <a href="assets/resume.pdf" download class="btn btn-resume">
-                    <span class="resume-icon">📄</span>
-                    Download Resume
-                </a>
+        <div class="hero-grid">
+            <div>
+                <div class="hero-tag">
+                    <span class="pulse-dot"></span>
+                    <span>Available for New Opportunities</span>
+                </div>
+                <h1>Engineering <span class="gradient-text">Software & Game</span> Solutions</h1>
+                <p class="hero-subtitle">
+                    Computer Science Engineer (CY Tech Graduate '25) specialized in low-level graphics engines, software modernization, and interactive systems.
+                </p>
+
+                <div class="hero-highlights">
+                    <span class="badge"><i class="fa-solid fa-code"></i> C++ / C# / Python</span>
+                    <span class="badge"><i class="fa-solid fa-cubes"></i> OpenGL & CUDA</span>
+                    <span class="badge"><i class="fa-solid fa-gamepad"></i> Unity / Unreal / Godot</span>
+                    <span class="badge"><i class="fa-solid fa-earth-americas"></i> International (Montréal)</span>
+                </div>
+
+                <div class="cta-group">
+                    <a href="#projects" class="btn btn-primary">
+                        <i class="fa-solid fa-rocket"></i> View Featured Projects
+                    </a>
+                    <a href="mailto:zelie.leydert@gmail.com" class="btn btn-secondary">
+                        <i class="fa-solid fa-envelope"></i> Contact Me
+                    </a>
+                </div>
+            </div>
+
+            <!-- Terminal Visual Card -->
+            <div class="terminal-card">
+                <div class="terminal-header">
+                    <span class="dot dot-red"></span>
+                    <span class="dot dot-yellow"></span>
+                    <span class="dot dot-green"></span>
+                    <span class="terminal-title">zelie_leydert_profile.cpp</span>
+                </div>
+                <div class="terminal-body">
+                    <div class="code-line"><span class="keyword">#include</span> &lt;iostream&gt;</div>
+                    <div class="code-line"><span class="keyword">#include</span> &lt;vector&gt;</div>
+                    <div class="code-line"><span class="comment">// CY Tech Computer Science Graduate</span></div>
+                    <div class="code-line"><span class="keyword">struct</span> Developer {</div>
+                    <div class="code-line">&nbsp;&nbsp;std::string name = <span class="string">"Zélie Leydert"</span>;</div>
+                    <div class="code-line">&nbsp;&nbsp;std::string degree = <span class="string">"CY Tech Engineering (2025)"</span>;</div>
+                    <div class="code-line">&nbsp;&nbsp;std::vector&lt;std::string&gt; core = {</div>
+                    <div class="code-line">&nbsp;&nbsp;&nbsp;&nbsp;<span class="string">"C++"</span>, <span class="string">"C#"</span>, <span class="string">"OpenGL"</span>, <span class="string">"Python"</span></div>
+                    <div class="code-line">&nbsp;&nbsp;};</div>
+                    <div class="code-line">&nbsp;&nbsp;bool passsion = <span class="keyword">true</span>;</div>
+                    <div class="code-line">};</div>
+                    <div class="code-line"><span class="keyword">int</span> main() {</div>
+                    <div class="code-line">&nbsp;&nbsp;Developer zelie;</div>
+                    <div class="code-line">&nbsp;&nbsp;std::cout &lt;&lt; <span class="string">"Ready for complex engineering challenges!"</span>;</div>
+                    <div class="code-line">&nbsp;&nbsp;<span class="keyword">return</span> 0;</div>
+                    <div class="code-line">}</div>
+                </div>
             </div>
         </div>
     </div>
 </section>
 
+<!-- Experience Section -->
+<section id="experience">
+    <div class="container">
+        <div class="section-header">
+            <div class="section-tag">Career History</div>
+            <h2 class="section-title">Professional Experience</h2>
+        </div>
+
+        <div class="timeline">
+            <!-- Experience 1 -->
+            <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-card">
+                    <div class="timeline-date">Apr 2026 – Sept 2026 | Montréal, Canada</div>
+                    <h3 class="timeline-role">Software Developer</h3>
+                    <div class="timeline-company"><i class="fa-solid fa-building"></i> Savoir-Faire Linux</div>
+                    <p class="timeline-desc">
+                        Developed a local translation plugin for the Jami privacy-focused communication software. Integrated new messaging features and optimized codebase performance.
+                    </p>
+                    <div class="timeline-tech">
+                        <span class="tech-pill">C++</span>
+                        <span class="tech-pill">Qt</span>
+                        <span class="tech-pill">Local Translation API</span>
+                        <span class="tech-pill">Git</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Experience 2 -->
+            <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-card">
+                    <div class="timeline-date">Sept 2025 – Mar 2026 | Montréal, Canada</div>
+                    <h3 class="timeline-role">Game & Software Developer</h3>
+                    <div class="timeline-company"><i class="fa-solid fa-gamepad"></i> Ivalys Studios</div>
+                    <p class="timeline-desc">
+                        Implemented interactive quest pipelines and core gameplay logic for upcoming video games. Developed responsive web interfaces and improved overall UI/UX.
+                    </p>
+                    <div class="timeline-tech">
+                        <span class="tech-pill">Unity</span>
+                        <span class="tech-pill">C#</span>
+                        <span class="tech-pill">GameMaker</span>
+                        <span class="tech-pill">JavaScript</span>
+                        <span class="tech-pill">UI/UX</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Experience 3 -->
+            <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-card">
+                    <div class="timeline-date">Jul 2025 – Dec 2025 | Montréal, Canada</div>
+                    <h3 class="timeline-role">Software Engineering Intern</h3>
+                    <div class="timeline-company"><i class="fa-solid fa-globe"></i> Experience Internship Canada</div>
+                    <p class="timeline-desc">
+                        Designed custom WordPress themes and plugins. Integrated APIs and automated user workflow databases to enhance platform efficiency.
+                    </p>
+                    <div class="timeline-tech">
+                        <span class="tech-pill">PHP</span>
+                        <span class="tech-pill">WordPress</span>
+                        <span class="tech-pill">MySQL</span>
+                        <span class="tech-pill">REST APIs</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Experience 4 -->
+            <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-card">
+                    <div class="timeline-date">Apr 2024 – Sept 2024 | Massy, France</div>
+                    <h3 class="timeline-role">Software Modernization Intern</h3>
+                    <div class="timeline-company"><i class="fa-solid fa-shield-halved"></i> Safran Electronics & Defense</div>
+                    <p class="timeline-desc">
+                        Refactored legacy codebase (+30 years old) to drastically reduce technical debt, improve software maintainability, and enforce clean architecture.
+                    </p>
+                    <div class="timeline-tech">
+                        <span class="tech-pill">C++</span>
+                        <span class="tech-pill">Clean Code</span>
+                        <span class="tech-pill">Refactoring</span>
+                        <span class="tech-pill">Static Analysis</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Experience 5 -->
+            <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-card">
+                    <div class="timeline-date">Jun 2023 – Sept 2023 | Montluçon, France</div>
+                    <h3 class="timeline-role">C++ Developer Intern</h3>
+                    <div class="timeline-company"><i class="fa-solid fa-shield-halved"></i> Safran Electronics & Defense</div>
+                    <p class="timeline-desc">
+                        Created a static analysis tool in C++ capable of detecting and resolving multi-module code quality issues in defense software.
+                    </p>
+                    <div class="timeline-tech">
+                        <span class="tech-pill">C++</span>
+                        <span class="tech-pill">Static Analysis</span>
+                        <span class="tech-pill">UML</span>
+                        <span class="tech-pill">Quality Assurance</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Experience 6 -->
+            <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-card">
+                    <div class="timeline-date">Apr 2022 – Jun 2022 | Anglet, France</div>
+                    <h3 class="timeline-role">3D Web Developer Intern</h3>
+                    <div class="timeline-company"><i class="fa-solid fa-cube"></i> Ubics / Domolandes</div>
+                    <p class="timeline-desc">
+                        Engineered an interactive 3D WebGL viewer integrated into a smart building web platform for spatial visualization.
+                    </p>
+                    <div class="timeline-tech">
+                        <span class="tech-pill">WebGL</span>
+                        <span class="tech-pill">Three.js</span>
+                        <span class="tech-pill">JavaScript</span>
+                        <span class="tech-pill">HTML/CSS</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Skills Section -->
 <section id="skills">
     <div class="container">
         <div class="section-header">
-            <div class="section-tag">What I Do</div>
+            <div class="section-tag">Technical Toolkit</div>
             <h2 class="section-title">Skills & Technologies</h2>
         </div>
+
         <div class="skills-grid">
-            <div class="skill-category">
-                <div class="skill-icon">🎮</div>
-                <h3>Game Development</h3>
-                <p style="color: var(--text-secondary); font-size: 0.95rem;">Creating immersive and interactive gameplay
-                    experiences</p>
-                <div class="skill-tags">
-                    <span class="skill-tag">Unity</span>
-                    <span class="skill-tag">Unreal Engine</span>
-                    <span class="skill-tag">Gamemaker Studio</span>
-                    <span class="skill-tag">C#</span>
-                    <span class="skill-tag">OpenGL</span>
+            <!-- Programming Languages -->
+            <div class="skill-box">
+                <div class="skill-box-header">
+                    <div class="skill-icon-wrapper"><i class="fa-solid fa-code"></i></div>
+                    <h3>Languages</h3>
                 </div>
-            </div>
-            <div class="skill-category">
-                <div class="skill-icon">🖥️</div>
-                <h3>Software Development</h3>
-                <p style="color: var(--text-secondary); font-size: 0.95rem;">Creating and maintaining scalable software
-                    solution</p>
-                <div class="skill-tags">
-                    <span class="skill-tag">C++</span>
-                    <span class="skill-tag">WPF</span>
-                    <span class="skill-tag">OOP</span>
-                    <span class="skill-tag">Design Patterns</span>
-                    <span class="skill-tag">Data Structures</span>
-                </div>
-            </div>
-            <div class="skill-category">
-                <div class="skill-icon">⚡</div>
-                <h3>Frontend Development</h3>
-                <p style="color: var(--text-secondary); font-size: 0.95rem;">Building responsive and interactive user
-                    interfaces</p>
-                <div class="skill-tags">
-                    <span class="skill-tag">React</span>
-                    <span class="skill-tag">JavaScript</span>
-                    <span class="skill-tag">TypeScript</span>
-                    <span class="skill-tag">HTML/CSS</span>
-                    <span class="skill-tag">Tailwind</span>
+                <div class="skill-tags-wrapper">
+                    <span class="skill-tag-item">C++</span>
+                    <span class="skill-tag-item">C#</span>
+                    <span class="skill-tag-item">Java</span>
+                    <span class="skill-tag-item">Python</span>
+                    <span class="skill-tag-item">JavaScript</span>
+                    <span class="skill-tag-item">PHP</span>
+                    <span class="skill-tag-item">GLSL / HLSL</span>
                 </div>
             </div>
 
-            <div class="skill-category">
-                <div class="skill-icon">🔧</div>
-                <h3>Backend Development</h3>
-                <p style="color: var(--text-secondary); font-size: 0.95rem;">Creating robust server-side applications
-                    and APIs</p>
-                <div class="skill-tags">
-                    <span class="skill-tag">Node.js</span>
-                    <span class="skill-tag">Python</span>
-                    <span class="skill-tag">Java</span>
-                    <span class="skill-tag">SQL</span>
-                    <span class="skill-tag">REST APIs</span>
+            <!-- Engines & Tools -->
+            <div class="skill-box">
+                <div class="skill-icon-wrapper"><i class="fa-solid fa-cubes"></i></div>
+                <div class="skill-box-header" style="margin-bottom:0;">
+                    <h3 style="margin-left: 1rem;">Engines & Graphics</h3>
+                </div>
+                <div class="skill-tags-wrapper" style="margin-top: 1.5rem;">
+                    <span class="skill-tag-item">Unity</span>
+                    <span class="skill-tag-item">Unreal Engine</span>
+                    <span class="skill-tag-item">Godot</span>
+                    <span class="skill-tag-item">OpenGL</span>
+                    <span class="skill-tag-item">CUDA</span>
+                    <span class="skill-tag-item">GameMaker</span>
+                    <span class="skill-tag-item">WordPress</span>
+                    <span class="skill-tag-item">Git / CMake</span>
                 </div>
             </div>
 
-            <div class="skill-category">
-                <div class="skill-icon">📦</div>
-                <h3>Tools & Platforms</h3>
-                <p style="color: var(--text-secondary); font-size: 0.95rem;">Working with modern development tools and
-                    cloud services</p>
-                <div class="skill-tags">
-                    <span class="skill-tag">Git</span>
-                    <span class="skill-tag">Docker</span>
-                    <span class="skill-tag">AWS</span>
-                    <span class="skill-tag">Linux</span>
-                    <span class="skill-tag">CI/CD</span>
+            <!-- Methodologies -->
+            <div class="skill-box">
+                <div class="skill-box-header">
+                    <div class="skill-icon-wrapper"><i class="fa-solid fa-list-check"></i></div>
+                    <h3>Methodologies</h3>
+                </div>
+                <div class="skill-tags-wrapper">
+                    <span class="skill-tag-item">Agile / Scrum</span>
+                    <span class="skill-tag-item">MoSCoW</span>
+                    <span class="skill-tag-item">UML</span>
+                    <span class="skill-tag-item">Clean Code</span>
+                    <span class="skill-tag-item">Refactoring</span>
+                    <span class="skill-tag-item">Static Analysis</span>
                 </div>
             </div>
 
-            <div class="skill-category">
-                <div class="skill-icon">💡</div>
-                <h3>Other Skills</h3>
-                <p style="color: var(--text-secondary); font-size: 0.95rem;">Problem-solving and collaborative
-                    development</p>
-                <div class="skill-tags">
-                    <span class="skill-tag">Agile</span>
-                    <span class="skill-tag">Testing</span>
-                    <span class="skill-tag">Debugging</span>
-                    <span class="skill-tag">UI/UX</span>
-                    <span class="skill-tag">APIs</span>
+            <!-- Languages -->
+            <div class="skill-box">
+                <div class="skill-box-header">
+                    <div class="skill-icon-wrapper"><i class="fa-solid fa-language"></i></div>
+                    <h3>Languages & Communication</h3>
+                </div>
+                <div class="skill-tags-wrapper">
+                    <span class="skill-tag-item">French (Native)</span>
+                    <span class="skill-tag-item">English (Fluent C1/C2)</span>
+                    <span class="skill-tag-item">Japanese (Beginner A1)</span>
                 </div>
             </div>
         </div>
     </div>
 </section>
 
+<!-- Projects Section -->
 <section id="projects">
     <div class="container">
         <div class="section-header">
-            <div class="section-tag">My Work</div>
+            <div class="section-tag">Portfolio Showcase</div>
             <h2 class="section-title">Featured Projects</h2>
         </div>
+
+        <div class="project-filters">
+            <button class="filter-btn active" data-filter="all">All Projects</button>
+            <button class="filter-btn" data-filter="graphics">Graphics & Engine</button>
+            <button class="filter-btn" data-filter="game">Game Development</button>
+            <button class="filter-btn" data-filter="web">Web & Tools</button>
+        </div>
+
         <div class="projects-grid">
-            <div class="project-card">
-                <div class="project-image">
-                    <img src="assets/img/Pluralys.jpg" alt="Pluralys"/>
+            <!-- Project 1: Raytracing Engine -->
+            <div class="project-card" data-category="graphics">
+                <div class="project-img-wrapper">
+                    <img src="assets/img/Raytracing.png" alt="Raytracing engine" onerror="this.src='https://placehold.co/600x400/182030/00ff88?text=Raytracing+Engine'">
+                    <span class="project-badge-type">Graphics Engine</span>
                 </div>
                 <div class="project-content">
-                    <div class="project-meta">
-                        <span class="project-type">Internship Project</span>
-                    </div>
-                    <h3>Pluralys</h3>
-                    <p>A narrative RPG with no combat mechanics. Contributed with the implementation of quests by
-                        scripting gameplay logic and integrating narrative elements</p>
-                    <div class="project-tech">
-                        <span class="tech-tag">Gamemaker studio</span>
-                        <span class="tech-tag">GML</span>
+                    <h3 class="project-title">Raytracing Engine</h3>
+                    <p class="project-desc">A custom-built graphics engine leveraging C++ and OpenGL to experiment with real-time raytracing, shaders, and material rendering.</p>
+                    <div class="project-tech-stack">
+                        <span class="tech-pill">C++</span>
+                        <span class="tech-pill">OpenGL</span>
+                        <span class="tech-pill">ImGui</span>
+                        <span class="tech-pill">GLSL</span>
                     </div>
                     <div class="project-links">
-                        <a href="https://store.steampowered.com/app/3275440/Pluralys/" class="project-link"
-                           target="_blank" rel="noopener noreferrer">Steam →</a>
+                        <a href="https://github.com/lZelie/raytracing-engine" target="_blank" class="project-link-btn">
+                            <i class="fa-brands fa-github"></i> Source Code
+                        </a>
+                        <a href="https://drive.google.com/file/d/1iCgwH6ZYl1SogO9EhqUi9aNWaKpB3mGE/view?usp=sharing" target="_blank" class="project-link-btn">
+                            <i class="fa-solid fa-play"></i> Watch Demo
+                        </a>
                     </div>
                 </div>
             </div>
 
-            <div class="project-card">
-                <div class="project-image"><img src="assets/img/Raytracing.png" alt="Raytracing engine"/>
+            <!-- Project 2: Pluralys -->
+            <div class="project-card" data-category="game">
+                <div class="project-img-wrapper">
+                    <img src="assets/img/Pluralys.jpg" alt="Pluralys RPG" onerror="this.src='https://placehold.co/600x400/182030/00d4ff?text=Pluralys+Steam'">
+                    <span class="project-badge-type">Steam Game</span>
                 </div>
                 <div class="project-content">
-                    <div class="project-meta">
-                        <span class="project-type">Academic/Personal Project</span>
-                    </div>
-                    <h3>Raytacing engine</h3>
-                    <p>A hands-on experiment of raytracing techniques with openGL</p>
-                    <div class="project-tech">
-                        <span class="tech-tag">C++</span>
-                        <span class="tech-tag">OpenGL</span>
-                        <span class="tech-tag">IMGui</span>
-                        <span class="tech-tag">Raytracing</span>
+                    <h3 class="project-title">Pluralys</h3>
+                    <p class="project-desc">A non-combat narrative RPG. Implemented interactive quest mechanisms, game state machines, and integrated narrative logic.</p>
+                    <div class="project-tech-stack">
+                        <span class="tech-pill">GameMaker</span>
+                        <span class="tech-pill">GML</span>
+                        <span class="tech-pill">Quest Logic</span>
                     </div>
                     <div class="project-links">
-                        <a href="https://drive.google.com/file/d/1iCgwH6ZYl1SogO9EhqUi9aNWaKpB3mGE/view?usp=sharing" class="project-link" target="_blank" rel="noopener noreferrer">View Demo →</a>
-                        <a href="https://github.com/lZelie/raytracing-engine" class="project-link" target="_blank" rel="noopener noreferrer">GitHub →</a>
+                        <a href="https://store.steampowered.com/app/3275440/Pluralys/" target="_blank" class="project-link-btn">
+                            <i class="fa-brands fa-steam"></i> View on Steam
+                        </a>
                     </div>
                 </div>
             </div>
 
-            <div class="project-card">
-                <div class="project-image"><img src="assets/img/lucid.jpeg" alt="Lucid"/></div>
+            <!-- Project 3: Lucid -->
+            <div class="project-card" data-category="game">
+                <div class="project-img-wrapper">
+                    <img src="assets/img/lucid.jpeg" alt="Lucid Game" onerror="this.src='https://placehold.co/600x400/182030/a855f7?text=Lucid+Godot'">
+                    <span class="project-badge-type">Game Jam</span>
+                </div>
                 <div class="project-content">
-                    <div class="project-meta">
-                        <span class="project-type">Game Jam</span>
-                    </div>
-                    <h3>Lucid</h3>
-                    <p>A video game about self acceptance and discovery</p>
-                    <div class="project-tech">
-                        <span class="tech-tag">C#</span>
-                        <span class="tech-tag">Godot</span>
+                    <h3 class="project-title">Lucid</h3>
+                    <p class="project-desc">An atmospheric game exploring self-acceptance and identity. Developed in C# using Godot during a collaborative Game Jam.</p>
+                    <div class="project-tech-stack">
+                        <span class="tech-pill">Godot</span>
+                        <span class="tech-pill">C#</span>
+                        <span class="tech-pill">2D Physics</span>
                     </div>
                     <div class="project-links">
-                        <a href="https://lucid-game.itch.io/lucid" class="project-link" target="_blank" rel="noopener noreferrer">Itch.io →</a>
-                        <a href="https://github.com/CodenameWaddles/Lucid" class="project-link" target="_blank" rel="noopener noreferrer">Github →</a>
+                        <a href="https://lucid-game.itch.io/lucid" target="_blank" class="project-link-btn">
+                            <i class="fa-solid fa-gamepad"></i> Play on Itch.io
+                        </a>
+                        <a href="https://github.com/CodenameWaddles/Lucid" target="_blank" class="project-link-btn">
+                            <i class="fa-brands fa-github"></i> GitHub
+                        </a>
                     </div>
                 </div>
             </div>
-            <div class="project-card">
-                <div class="project-image"><img src="assets/img/MadMonk.png" alt="MadMonk"/></div>
+
+            <!-- Project 4: MadMonk -->
+            <div class="project-card" data-category="game">
+                <div class="project-img-wrapper">
+                    <img src="assets/img/MadMonk.png" alt="MadMonk" onerror="this.src='https://placehold.co/600x400/182030/00ff88?text=MadMonk+Unity'">
+                    <span class="project-badge-type">Unity Game</span>
+                </div>
                 <div class="project-content">
-                    <div class="project-meta">
-                        <span class="project-type">Game Jam</span>
-                    </div>
-                    <h3>MadMonk</h3>
-                    <p>A fun and raging video game about a mad monkey destroying the world</p>
-                    <div class="project-tech">
-                        <span class="tech-tag">C#</span>
-                        <span class="tech-tag">Unity</span>
+                    <h3 class="project-title">MadMonk</h3>
+                    <p class="project-desc">Action arcade game built with Unity & C#. Features destruction physics, enemy AI behaviors, and fast-paced controls.</p>
+                    <div class="project-tech-stack">
+                        <span class="tech-pill">Unity</span>
+                        <span class="tech-pill">C#</span>
+                        <span class="tech-pill">Physics & AI</span>
                     </div>
                     <div class="project-links">
-                        <a href="https://ylacaze.itch.io/madmonk" class="project-link" target="_blank" rel="noopener noreferrer">Itch.io →</a>
+                        <a href="https://ylacaze.itch.io/madmonk" target="_blank" class="project-link-btn">
+                            <i class="fa-solid fa-gamepad"></i> Play on Itch.io
+                        </a>
                     </div>
                 </div>
             </div>
-            <div class="project-card">
-                <div class="project-image"><img src="assets/img/VisuDemo.png" alt="Fractals Visualiser"/></div>
+
+            <!-- Project 5: Fractals Visualiser -->
+            <div class="project-card" data-category="graphics">
+                <div class="project-img-wrapper">
+                    <img src="assets/img/VisuDemo.png" alt="Fractals Visualiser" onerror="this.src='https://placehold.co/600x400/182030/00d4ff?text=3D+Fractals+LeapMotion'">
+                    <span class="project-badge-type">3D Engine</span>
+                </div>
                 <div class="project-content">
-                    <div class="project-meta">
-                        <span class="project-type">Academic project</span>
-                    </div>
-                    <h3>Fractals Visualiser</h3>
-                    <p>A 3D engine to visualise fractals with the leap motion</p>
-                    <div class="project-tech">
-                        <span class="tech-tag">C++</span>
-                        <span class="tech-tag">OpenGL</span>
-                        <span class="tech-tag">IMGui</span>
-                        <span class="tech-tag">LeapSDK</span>
+                    <h3 class="project-title">Fractals Visualiser</h3>
+                    <p class="project-desc">3D fractal rendering engine controlled with hand gestures via Leap Motion hardware integration and OpenGL shaders.</p>
+                    <div class="project-tech-stack">
+                        <span class="tech-pill">C++</span>
+                        <span class="tech-pill">OpenGL</span>
+                        <span class="tech-pill">LeapSDK</span>
+                        <span class="tech-pill">ImGui</span>
                     </div>
                     <div class="project-links">
-                        <a href="https://github.com/pwouik/VisuDemo" class="project-link" target="_blank" rel="noopener noreferrer">Github →</a>
+                        <a href="https://github.com/pwouik/VisuDemo" target="_blank" class="project-link-btn">
+                            <i class="fa-brands fa-github"></i> GitHub Repository
+                        </a>
                     </div>
                 </div>
-            </div><div class="project-card">
-                <div class="project-image"><img src="assets/img/survivor.gif" alt="Survivor"/></div>
+            </div>
+
+            <!-- Project 6: Survivor -->
+            <div class="project-card" data-category="game">
+                <div class="project-img-wrapper">
+                    <img src="assets/img/survivor.gif" alt="Survivor Game" onerror="this.src='https://placehold.co/600x400/182030/a855f7?text=Multiplayer+Survivor'">
+                    <span class="project-badge-type">Multiplayer</span>
+                </div>
                 <div class="project-content">
-                    <div class="project-meta">
-                        <span class="project-type">Academic project</span>
-                    </div>
-                    <h3>Survivor</h3>
-                    <p>A vampire survivor like video game with multiplayer</p>
-                    <div class="project-tech">
-                        <span class="tech-tag">C#</span>
-                        <span class="tech-tag">Unity</span>
-                        <span class="tech-tag">Networking</span>
+                    <h3 class="project-title">Survivor Multiplayer</h3>
+                    <p class="project-desc">Vampire-survivors style horde game incorporating client-server multiplayer synchronization and dynamic scaling.</p>
+                    <div class="project-tech-stack">
+                        <span class="tech-pill">Unity</span>
+                        <span class="tech-pill">C#</span>
+                        <span class="tech-pill">Networking</span>
                     </div>
                     <div class="project-links">
-                        <a href="https://github.com/Les-Nuages-Blancs/Survivor" class="project-link" target="_blank" rel="noopener noreferrer">Github →</a>
+                        <a href="https://github.com/Les-Nuages-Blancs/Survivor" target="_blank" class="project-link-btn">
+                            <i class="fa-brands fa-github"></i> GitHub Repository
+                        </a>
                     </div>
                 </div>
             </div>
@@ -262,41 +461,80 @@
     </div>
 </section>
 
+<!-- Education Section -->
+<section id="education">
+    <div class="container">
+        <div class="section-header">
+            <div class="section-tag">Academic Background</div>
+            <h2 class="section-title">Education & Qualifications</h2>
+        </div>
+
+        <div class="education-grid">
+            <div class="edu-card">
+                <div class="edu-year">2022 – 2025</div>
+                <h3 class="edu-degree">Diplôme d'Ingénieur Informatique</h3>
+                <p class="edu-school">CY Tech | Pau / Cergy, France</p>
+                <p style="font-size: 0.85rem; color: var(--text-secondary); margin-top: 0.8rem;">
+                    Master-degree equivalent computer science program focused on software engineering, low-level architecture, graphics, and agile methodologies.
+                </p>
+            </div>
+
+            <div class="edu-card">
+                <div class="edu-year">2020 – 2022</div>
+                <h3 class="edu-degree">DUT Informatique</h3>
+                <p class="edu-school">IUT Informatique | Anglet, France</p>
+                <p style="font-size: 0.85rem; color: var(--text-secondary); margin-top: 0.8rem;">
+                    Two-year university degree specializing in software algorithms, object-oriented programming, and web development.
+                </p>
+            </div>
+
+            <div class="edu-card">
+                <div class="edu-year">2020</div>
+                <h3 class="edu-degree">Baccalauréat Scientifique</h3>
+                <p class="edu-school">Lycée Saint-Cricq | Pau, France</p>
+                <p style="font-size: 0.85rem; color: var(--text-secondary); margin-top: 0.8rem;">
+                    Scientific Baccalaureate with focus on Mathematics and Computer Science fundamentals.
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Contact Section -->
 <section id="contact">
     <div class="container">
-        <div class="contact-content">
-            <h2>Let's work together</h2>
-            <p>I'm currently looking for new opportunities. Whether you have a question or just want to say hi, feel
-                free to reach out!</p>
-            <a href="mailto:zelie.leydert@gmail.com" class="btn btn-primary">Send Message</a>
+        <div class="contact-box">
+            <h2 class="section-title">Let's Connect & Build</h2>
+            <p style="color: var(--text-secondary); margin-top: 1rem; max-width: 600px; margin-left: auto; margin-right: auto;">
+                I am actively seeking software engineering and game development roles. Feel free to reach out for inquiries or collaborations!
+            </p>
+
             <div class="contact-methods">
-                <a href="mailto:zelie.leydert@gmail.com" class="contact-method">
-                    <span class="contact-icon">📧</span>
+                <a href="mailto:zelie.leydert@gmail.com" class="contact-card">
+                    <i class="fa-solid fa-envelope"></i>
                     <span>zelie.leydert@gmail.com</span>
                 </a>
-                <a href="https://github.com/lZelie" target="_blank" class="contact-method">
-                    <span class="contact-icon">💻</span>
-                    <span>GitHub</span>
+                <a href="https://www.linkedin.com/in/z%C3%A9lie-leydert-b05067218/" target="_blank" class="contact-card">
+                    <i class="fa-brands fa-linkedin"></i>
+                    <span>LinkedIn Profile</span>
                 </a>
-                <a href="https://www.linkedin.com/in/z%C3%A9lie-leydert-b05067218/" target="_blank" class="contact-method">
-                    <span class="contact-icon">💼</span>
-                    <span>LinkedIn</span>
-                </a>
-                <a href="assets/resume.pdf" download class="contact-method">
-                    <span class="contact-icon">📄</span>
-                    <span>Resume</span>
+                <a href="https://github.com/lZelie" target="_blank" class="contact-card">
+                    <i class="fa-brands fa-github"></i>
+                    <span>GitHub / lZelie</span>
                 </a>
             </div>
         </div>
     </div>
 </section>
 
+<!-- Footer -->
 <footer>
     <div class="container">
-        <p></p>
+        <p>&copy; 2026 Zélie Leydert — Computer Science Engineer & Software Developer</p>
     </div>
 </footer>
 
 <script src="script.js"></script>
+
 </body>
 </html>
